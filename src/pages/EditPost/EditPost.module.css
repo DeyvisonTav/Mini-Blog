@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.edit_post {
+  @apply w-full h-full pt-20 ;
+
+  text-align: center;
+}
+
+.edit_post h2 {
+  font-size: 2.5em;
+}
+
+.edit_post p {
+  @apply text-lg;
+  color: #aaa;
+  margin-bottom: 2em;
+}
+
+.edit_post .preview_title {
+  @apply text-2xl pt-5 pb-5;
+  margin-bottom: 0.2em;
+  color: #000;
+  font-weight: bold;
+}
+
+.image_preview {
+  @apply shadow-lg shadow-black rounded-lg  flex  justify-center items-center  ;
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.edit_form{
+  @apply flex flex-col justify-center items-center;
+}
+
+.edit_input{
+  @apply text-lg mt-2 p-3 border-2 border-gray-300  w-80 bg-transparent rounded-md;
+}
+.edit_span{
+  @apply text-lg font-bold px-2;
+}
+.edit_btn{
+  @apply text-center mt-2 border-2  border-black text-white bg-zinc-900 hover:bg-white hover:text-black rounded-lg p-2 transition-colors duration-200  font-bold;
+}
+.edit_textarea{
+  @apply text-lg h-32 mt-2 border-2 border-gray-300 p-3 w-80 bg-transparent rounded-md;
+}

@@ -17,6 +17,9 @@ import { Login } from './pages/Login/Login'
 import { Register } from './pages/Register/Register'
 import { CreatePost } from './pages/CreatePost/CreatePost'
 import { Dashboard } from './pages/Dashboard/Dashboard'
+import { Search } from './pages/Search/Search'
+import { Post } from './pages/Post/Post'
+import { EditPost } from './pages/EditPost/EditPost'
 
 export function App() {
   const [user, setUser] = useState(undefined)
@@ -44,9 +47,19 @@ export function App() {
         <BrowserRouter>
           <Navbar />
           <div className="h-scrren w-screen">
-            <Routes>
+          <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route
+                path="/posts/create"
+                element={user ? <CreatePost /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/posts/edit/:id"
+                element={user ? <EditPost /> : <Navigate to="/login" />}
+              />
+              <Route path="/posts/:id" element={<Post />} />
+              <Route path="/search" element={<Search />} />
               <Route
                 path="/login"
                 element={!user ? <Login /> : <Navigate to="/" />}
@@ -54,10 +67,6 @@ export function App() {
               <Route
                 path="/register"
                 element={!user ? <Register /> : <Navigate to="/" />}
-              />
-              <Route
-                path="/posts/create"
-                element={user ? <CreatePost /> : <Navigate to="/login" />}
               />
               <Route
                 path="/dashboard"
