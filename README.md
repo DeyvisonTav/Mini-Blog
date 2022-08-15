@@ -18,22 +18,28 @@
 
 ## 💻 Sobre o projeto
 
-Secret Word - é um projeto todo desenvolvido em React Js para mostrar meus conhecimentos.
-Ele é um game no estilo caça palavras em que o player tem 5 chances para ir adivinhando as letras da palavra secreta até completala, o player tem acesso a uma dica sobre a palavra.
-O game também mostras as letras que o Player for errando.
-A cada palavra acertada o player ganha 100 pontos.
-
-No final do jogo o player tem o total de pontos obtidos em score e a opção de inicar uma nova partida
+Este projeto consiste em um blog feito com
+React no front-end e Firebase no back-end
+Usa tailwindcss na estilização
+Usa hooks do tipo useState useEffect
+Rotas criadas usando React-Router-Dom
+Usa a biblioteca de icons phosphoricons
+Usa Context api no front-end
+Criação de componentes que conversam
+entre si, usando props child
+Criar posts, criar usuarios, deletar, atualizar,
+e logar no back-end com o firebase, usando
+o Firestore como banco de dados
 
 ---
 
-- [x] botão de start game
-- [x] mostrar pontuação
-- [x] mostar letras erradas
-- [x] 5 chances de acertar uma letra
-- [x] dica sobre a palavra
-- [x] Roda apenas em pc/notebook
-- [x] botão de reiniar partida
+- [x] Criar usuarios
+- [x] Login
+- [x] Criar posts
+- [x] Pesquisar por posts
+- [x] Dashboard
+- [x] Atualizar posts
+- [x] Excluir posts
 
 ### Mobile
 
@@ -44,11 +50,11 @@ Ainda em Desenvolvimento
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Secret Word" title="#SecreWord" src="./assets/Web 1.png" width="400px">
+  <img alt="MiniBlog" title="#MiniBlog" src="./src/assets/Web 1.png" width="400px">
 
-  <img alt="Secret Word" title="#SecretWord" src="./assets/Web 2.png" width="400px">
+  <img alt="MiniBlog" title="#MiniBlog" src="./src/assets/Web 2.png" width="400px">
 
-  <img alt="Secret Word" title="#SecretWord" src="./assets/Web 3.png" width="400px">
+  <img alt="MiniBlog" title="#MiniBlog" src="./src/assets/Web 3.png" width="400px">
 </p>
 
 ---
@@ -56,7 +62,7 @@ Ainda em Desenvolvimento
 ## 🚀 Como executar o projeto/site
 
 basta acessar o o link
-[Secret Word](https://jogo-secret-words.vercel.app/)
+[MiniBlog](https://mini-blog-dusky.vercel.app/)
 
 ---
 
