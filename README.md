@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="MiniBlogLogo" src="./src/assets/Logo.png" />
+    <img alt="MiniBlogLogo" src="./src/assets/LOGO.png" />
 </h1>
 
 <h4 align="center"> 
